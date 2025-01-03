@@ -8,9 +8,11 @@
     border: 1px solid black;
 }
 
-.text{
+#text{
     border: 3px solid black; 
-    width: 500px; height: 150px; 
+    width: 500px; 
+    height: 150px; 
     padding: 7px;
+    font-size: 10px;
     
 }
