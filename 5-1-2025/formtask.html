@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Storage</title>
+</head>
+
+<body id="demo">
+
+    <form id="form" onsubmit="store(event)">
+
+        Name: <input type="text" name="Name" id="Name"><br><br>
+        Age: <input type="text" name="Age" id="Age"><br><br>
+        Gender: <input type="text" name="Gender" id="Gender"><br><br>
+        Birth Date: <input type="date" name="date" id="date"><br><br>
+        Upload Your Image: <input type="file" name="file" id="file"><br><br>
+        <hr>
+
+        Discription: <input type="text" name="Discription" id="Discription"><br><br>
+        Major & University: <input type="text" name="University" id="University"><br><br>
+
+        Programming Language:
+        <input type="checkbox" name="HTML" id="HTML">
+        <label for="HTML">HTML</label>
+        <input type="checkbox" name="CSS" id="CSS">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" name="JavacSript" id="JavacSript">
+        <label for="JavacSript">JavacSript</label><br><br>
+        <hr>
+        Siblings Number: <input type="text" name="Siblings num" id="num"><br><br>
+        Discription of Siblings number : <input type="text" name="Discription_num" id="Discription_num"><br><br>
+
+        <input type="submit" name="submit" id="submit">
+
+
+
+
+
+
+
+
+
+    </form>
+
+    <h2>Stored Data</h2>
+    <div id="output"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

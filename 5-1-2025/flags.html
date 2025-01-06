@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select name="flags" id="flags"  onchange="displayflag()">
+            <option value="jordan" id="jordan">Jordan</option>
+            <option value="palastine" id="palastine">Palastine</option>
+            <option value="syria" id="syria">Syria</option>
+        </select>
+    </form>
+
+    <!-- <div id="flagch"></div> -->
+     <!-- <img id="flagch" src="/img/" width="250px" height="250" style="padding: 20px;"> -->
+
+    <script>
+
+        // function show_flag(img) {
+        //     var existing_flag = document.getElementById("flag");
+        //     if (existing_flag) {
+        //         existing_flag.remove();
+        //     }
+        //     var flag = document.createElement("img")
+        //     flag.src = img;
+        //     flag.id="flag";
+        //     document.body.appendChild(flag);
+        // }
+
+
+
+
+        // function displayflag() {
+
+        //     let flagcountry = document.getElementById("flags");
+        //     if (flagcountry.options[flagcountry.selectedIndex].text == "jordan") {
+        //         show_flag("img/jordan.jpg")
+        //     }
+        //     else if (flagcountry.options[flagcountry.selectedIndex].text == "palastine") {
+        //         show_flag("img/palastine.jpg")
+        //     }
+        //     else if (flagcountry.options[flagcountry.selectedIndex].text == "syria") {
+        //         show_flag("img/syria.jpg")
+        //     }
+
+
+
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function addflag(countflags){
+            let flagin = document.getElementById("contflag");
+           
+            if (flagin){flagin.remove(); }
+                
+            let contflag = document.createElement("img")
+            contflag.src=countflags;
+            contflag.id="contflag";
+            document.body.appendChild(contflag);
+        }
+
+
+function displayflag() {
+
+    let cflag = document.getElementById("flags");
+    if (cflag.options[cflag.selectedIndex].text == "jordan") 
+        addflag("img/jordan.jpg")
+            
+    else if (cflag.options[cflag.selectedIndex].text == "palastine") 
+        addflag("img/palastine.jpg")
+            
+    else  (cflag.options[cflag.selectedIndex].text == "syria") 
+                addflag("img/syria.jpg")
+}
+
+
+        // let flag = document.getElementById("flags");
+
+        // var imgUrl = "";
+        // if (selected.options[flag.selectedIndex].text == "jordan") 
+        //     imgUrl = "/img/jordan.jpg";
+
+        //     document.getElementById("flagch").src = imgUrl;
+
+        //     if (selected.value == "palastine") 
+        //     imgUrl = "jordan.jpg";
+
+        //     document.getElementById("flagch").src = imgUrl;
+
+
+        //     if (selected.value == "syria") 
+        //     imgUrl = "jordan.jpg";
+
+        //     document.getElementById("flagch").src = imgUrl;
+
+        // joflagch.addEventListener("select" , function (){
+        // document.getElementById("jordan").innerHTML = '<img src="img/jordan.jpg">' 
+        // })
+
+
+        // let paflag = document.getElementById("flags");
+        // paflagch.addEventListener("select" , function (){
+        // document.getElementById("palastine").innerHTML = '<img src="img/palastine.jpg">' 
+        // })
+
+
+
+        // let syflag = document.getElementById("syria");
+        // syflagch.addEventListener("select" , function (){
+        // document.getElementById("syria").innerHTML = '<img src="img/syria.jpg">';
+        // console.log("hellosyria") 
+        // })
+    </script>
+    
+</body>
+</html>

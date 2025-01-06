@@ -44,7 +44,7 @@
 
 //task5
 //1
-//2
+//2 parameter is a number
 //3 logical error number * string
 
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <select name="countries" id="countries" onchange="display_image()">
+            <option value="palastine" id="palastine" >palastine</option>
+            <option value="jordan" id="jordan" >jordan</option>
+            <option value="syria" id="syria" >syria</option>
+
+
+        </select><br><br><br>
+
+
+
+    </form>
+    <script>
+
+        function show_flag(img) {
+            var existing_flag = document.getElementById("flag");
+            if (existing_flag) {
+                existing_flag.remove();
+            }
+            var flag = document.createElement("img")
+            flag.src = img;
+            flag.id="flag";
+            document.body.appendChild(flag);
+        }
+
+
+
+
+        function display_image() {
+
+            let country = document.getElementById("countries");
+            if (country.options[country.selectedIndex].text == "palastine") {
+                show_flag("img/palastine.jpg")
+            }
+            else if (country.options[country.selectedIndex].text == "jordan") {
+                show_flag("img/jordan.jpg")
+            }
+            else if (country.options[country.selectedIndex].text == "syria") {
+                show_flag("img/syria.jpg")
+            }
+
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
+
