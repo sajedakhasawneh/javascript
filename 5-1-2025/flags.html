@@ -19,7 +19,69 @@
 
     <script>
 
+
         // function show_flag(img) {
+        //     var existing_flag = document.getElementById("flag");
+        //     if (existing_flag) {
+        //         existing_flag.remove();
+        //     }
+        //     var flag = document.createElement("img")
+        //     flag.src = img;
+        //     flag.id="flag";
+        //     document.body.appendChild(flag);
+        // }
+
+
+
+
+        // function displayflag(){
+
+        //     let country = document.getElementById("flags");
+        //     if (country.options[country.selectedIndex].text == "jordan") {
+        //         show_flag("img/jordan.jpg")
+        //     }
+        //     else if (country.options[country.selectedIndex].text == "palastine") {
+        //         show_flag("img/palastine.jpg")
+        //     }
+        //     else if (country.options[country.selectedIndex].text == "syria") {
+        //         show_flag("img/syria.jpg")
+        //     }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // function addflag(img) {
         //     var existing_flag = document.getElementById("flag");
         //     if (existing_flag) {
         //         existing_flag.remove();
@@ -37,13 +99,13 @@
 
         //     let flagcountry = document.getElementById("flags");
         //     if (flagcountry.options[flagcountry.selectedIndex].text == "jordan") {
-        //         show_flag("img/jordan.jpg")
+        //         addflag("img/jordan.jpg")
         //     }
         //     else if (flagcountry.options[flagcountry.selectedIndex].text == "palastine") {
-        //         show_flag("img/palastine.jpg")
+        //         addflag("img/palastine.jpg")
         //     }
         //     else if (flagcountry.options[flagcountry.selectedIndex].text == "syria") {
-        //         show_flag("img/syria.jpg")
+        //         addflag("img/syria.jpg")
         //     }
 
 
@@ -52,21 +114,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 function addflag(countflags){
             let flagin = document.getElementById("contflag");
            
-            if (flagin){flagin.remove(); }
-                
+            if (flagin){
+                flagin.remove(); 
+            }
             let contflag = document.createElement("img")
             contflag.src=countflags;
             contflag.id="contflag";

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="fname" >Enter a Fname:</label><br>
+        <input type="text" id="fname" required onkeyup="namevalidation()"> 
+        <span id="fncheck"></span><br>
+
+        <label for="lname" >Enter a Lname:</label><br>
+        <input type="text" id="lname" required onkeyup="lastnamevalidation()">
+        <span id="lncheck"></span><br>
+
+        <label for="date" >Enter a Bdate:</label><br>
+        <input type="text" id="date" onkeyup="bdatevalidation()">
+        <span id="dcheck"></span><br>
+
+        <label for="email" >Enter an email:</label><br>
+        <input type="email" id="email" required onkeyup="emailvalidation()">
+        <span id="emailcheck"></span><br>
+
+        <label for="cemail" >Confirm email:</label><br>
+        <input type="email" id="cemail" onkeyup="confirmemail()">
+        <span id="cemailcheck"></span><br>
+
+        <label for="password" >Psssword:</label><br>
+        <input type="text" id="password" required onkeyup="passwordvalidation()">
+        <span id="passcheck"></span><br>
+
+        <label for="cpassword" >Confirm Psssword:</label><br>
+        <input type="text" id="cpassword">
+        <span id="cpasscheck"></span><br>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>

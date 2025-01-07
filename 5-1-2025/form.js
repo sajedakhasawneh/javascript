@@ -50,7 +50,7 @@ function store(event) {
 
 function display_form_info() {
     var output_div = document.getElementById("output");
-    output_div.innerHTML = "<h3>Stored Form Data:</h3>"
+    output_div.innerHTML = "<h3>show data:</h3>"
 
     for (let i = 0; i < localStorage.length; i++) {
         var key = localStorage.key(i);
