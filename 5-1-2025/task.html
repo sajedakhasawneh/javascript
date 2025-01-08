@@ -8,7 +8,7 @@
 <body>
     
 
-    <form id="formone" >
+    <form id="formone" onsubmit="storedata(event)">
         <label for="name" >Name:</label>
         <input type="text" id="name" name="name">
         <br><br>
@@ -46,10 +46,12 @@
         <label for="dessbi" >Description Sibilings:</label>
         <input type="text" id="dessbi" name="dessbi">
         <br><br>
-        <input type="submit">
+        <input type="submit" id="submit">
     </form>
 
+    <h3>Data</h3>
+    <div id="data"></div>
 
-    <script src="jstask2.js"></script>
+    <script src="sform.js"></script>
 </body>
 </html>
