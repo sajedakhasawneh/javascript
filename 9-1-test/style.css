@@ -1,0 +1,12 @@
+ table, th, td {
+    /* border: 2px solid rgb(94, 84, 84); */
+    padding: 20px;
+    padding-right: 150px;
+    margin: 20px;
+  }
+
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
